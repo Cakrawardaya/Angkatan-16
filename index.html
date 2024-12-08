@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkatan 16</title>
+    <!-- Standard Favicon -->
+    <link href="https://assets.onecompiler.app/42x4wv4cn/42zrkcptf/CAKRAWARDAYA_AKT16-transformed.png" rel="icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .header img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        caption {
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://assets.onecompiler.app/42x4wv4cn/42zrkcptf/CAKRAWARDAYA_AKT16-transformed.png" alt="Logo Cakrawardaya">
+        <h1>Angkatan 16</h1>
+    </div>
+    <div class="container">
+        <table>
+            <caption>Struktur Pengurus</caption>
+            <tr>
+                <th>Jabatan</th>
+                <th>Nama</th>
+            </tr>
+            <tr><td>Pratama PA</td><td>Rahmad Faldi P.N</td></tr>
+            <tr><td>Wapra PA</td><td>Rafflesia H.D</td></tr>
+            <tr><td>Pratama PI</td><td>Aurelia Meiwati F.A</td></tr>
+            <tr><td>Wapra PI</td><td>Aldini Khoirunisa</td></tr>
+            <tr><td>Kerani PA</td><td>1. Devian Mayma A.</td></tr>
+            <tr><td>Kerani PI</td><td>1. Felicia Cahya K.<br>2. Nadya S.L</td></tr>
+            <tr><td>Juang PA</td><td>1. Hafyz A.A</td></tr>
+            <tr><td>Juang PI</td><td>1. Syarifatul L.<br>2. Yunita Siti H.</td></tr>
+        </table>
+
+        <table>
+            <caption>Daftar Anggota</caption>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+            </tr>
+            <!-- Data anggota -->
+            <script>
+                const anggota = [
+                    "Berliana Diva P.", "Chelsea Putri", "Aldina Khoirunisa", "Keila Wilni Kamilah",
+                    "Keyla Avisa S.", "Noufal Fakhrudin", "Ajeng Lituhayu A.", "Davina Harliz Aulia",
+                    "Esar Savero Widodo", "Dewina Ciptanita N.", "Mochammad Shavin Y.", 
+                    "Kirana Dewi Kartika S.", "Sabrina Frenesia Larasati", "Thalita Syalsya Bila", 
+                    "Amirani Dzakiyyatu N.", "Risqi Bima Tricahyo", "Yovita Hidayatul M.", 
+                    "Goldy Langit P. P", "Febyana Nurlia S.", "Ghaitsa Zahira Wijaya", 
+                    "Rahajeng Putri H.", "Salsa Bila Alfi N.", "Zaskia Salsabila P.", 
+                    "Nesyha Chantika P.", "Kharisma Intan P.", "Mulia Hati Karmun", 
+                    "Sulthan Amukti Wibowo", "Kharisma Widi Handayani", "Zahroh Faalihah Zalianty", 
+                    "Moh. Ghazy Alian Saputra"
+                ];
+                document.write(anggota.map((nama, i) => `
+                    <tr>
+                        <td>${i + 1}</td>
+                        <td>${nama}</td>
+                    </tr>
+                `).join(''));
+            </script>
+        </table>
+    </div>
+    <div class="footer">
+        © 2024 Pramuka Cakrawardaya. All rights reserved.
+    </div>
+</body>
+</html>
